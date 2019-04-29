@@ -5,16 +5,16 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_tic_tac.*
 import java.util.*
 import kotlin.collections.ArrayList
 
-class MainActivity : AppCompatActivity() {
+class TicTacToeActivity : AppCompatActivity() {
     var autoPlay = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_tic_tac)
 
         btnRefersh.setOnClickListener{
             enableAllButtons()
@@ -157,7 +157,6 @@ class MainActivity : AppCompatActivity() {
     var activePlayer = 1
 
     private fun playGame(btnSelected: Button, cellID: Int) {
-
         if (activePlayer == 1) {
             btnSelected.text = "X"
             btnSelected.setBackgroundResource(R.color.colorBlue)
@@ -260,26 +259,26 @@ class MainActivity : AppCompatActivity() {
 
     private fun disableRemainingButton() {
         val emptyCell = ArrayList<Int>()
-        for (cell in 0..9){
-            if (!(player1.contains(cell) || player2.contains(cell))){
+        for (cell in 0..9) {
+            if (!(player1.contains(cell) || player2.contains(cell))) {
                 emptyCell.add(cell)
             }
         }
 
-        if (emptyCell.size <= 1){
-        for (cellToDisable in 0 until emptyCell.size){
-            when(emptyCell[cellToDisable]){
-                1-> btn1.isEnabled = false
-                2-> btn2.isEnabled = false
-                3-> btn3.isEnabled = false
-                4-> btn4.isEnabled = false
-                5-> btn5.isEnabled = false
-                6-> btn6.isEnabled = false
-                7-> btn7.isEnabled = false
-                8-> btn8.isEnabled = false
-                9-> btn9.isEnabled = false
+        if (emptyCell.size <= 1) {
+            for (cellToDisable in 0 until emptyCell.size) {
+                when (emptyCell[cellToDisable]) {
+                    1 -> btn1.isEnabled = false
+                    2 -> btn2.isEnabled = false
+                    3 -> btn3.isEnabled = false
+                    4 -> btn4.isEnabled = false
+                    5 -> btn5.isEnabled = false
+                    6 -> btn6.isEnabled = false
+                    7 -> btn7.isEnabled = false
+                    8 -> btn8.isEnabled = false
+                    9 -> btn9.isEnabled = false
+                }
             }
         }
-    }
     }
 }
