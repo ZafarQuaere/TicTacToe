@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btnRefersh.setOnClickListener{
-            //TODO enable all buttons to default
-            //TODO Clear array list
             enableAllButtons()
         }
         btnEnableAutoPlay.setOnClickListener {
@@ -255,6 +253,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Player 2 is Winner ", Toast.LENGTH_LONG).show()
             }
             //TODO Once a winner is declared disable all buttons
+            //TODO if there is no winner until empty cell <=1 then also disable
             disableRemainingButton()
         }
     }
@@ -267,6 +266,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        if (emptyCell.size <= 1){
         for (cellToDisable in 0 until emptyCell.size){
             when(emptyCell[cellToDisable]){
                 1-> btn1.isEnabled = false
@@ -280,5 +280,6 @@ class MainActivity : AppCompatActivity() {
                 9-> btn9.isEnabled = false
             }
         }
+    }
     }
 }
