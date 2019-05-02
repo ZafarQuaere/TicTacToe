@@ -9,13 +9,13 @@
         tools:context="com.learn.caculator.CalculatorActivity" android:padding="15dp">
 
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:text="layout_main"/>
+              android:text="xxhdpi"/>
     <EditText
             android:background="@color/colorGray"
             android:textColor="@color/colorWhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="120dp"
+            android:minHeight="130dp"
             android:gravity="bottom|right"
             android:inputType="none"
             android:textSize="30sp"

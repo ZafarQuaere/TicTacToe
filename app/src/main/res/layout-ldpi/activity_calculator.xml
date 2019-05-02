@@ -6,16 +6,17 @@
         android:layout_height="match_parent"
         android:background="#f8f8f8"
         android:orientation="vertical"
-        tools:context="com.learn.caculator.CalculatorActivity" android:padding="15dp">
-
+        tools:context="com.learn.caculator.CalculatorActivity"
+        android:padding="10dp">
     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-              android:text="layout_main"/>
+              android:text="ldpi"/>
+
     <EditText
             android:background="@color/colorGray"
             android:textColor="@color/colorWhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="120dp"
+            android:minHeight="100dp"
             android:gravity="bottom|right"
             android:inputType="none"
             android:textSize="30sp"
@@ -39,7 +40,8 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonAc"/>
+                    android:layout_height="50dp" 
+                    android:id="@+id/buttonAc"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -48,7 +50,7 @@
                     android:text="+/-"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonPlusMinus"/>
+                    android:layout_height="50dp" android:id="@+id/buttonPlusMinus"/>
             <Button
                     android:onClick="buttonPercentClick"
                     android:layout_marginRight="5dp"
@@ -57,7 +59,7 @@
                     android:text="%"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonPercent"/>
+                    android:layout_height="50dp" android:id="@+id/buttonPercent"/>
             <Button
                     android:onClick="buttonNumberManipulation"
                     android:background="@color/colorYellowish"
@@ -65,7 +67,7 @@
                     android:text="/"
                     android:layout_weight="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonDivide"/>
+                    android:layout_height="50dp" android:id="@+id/buttonDivide"/>
         </TableRow>
 
         <TableRow android:layout_width="match_parent"
@@ -79,7 +81,7 @@
                     android:layout_weight="1"
                     android:text="7"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button7"/>
+                    android:layout_height="50dp" android:id="@+id/button7"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -88,7 +90,7 @@
                     android:layout_weight="1"
                     android:text="8"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button8"/>
+                    android:layout_height="50dp" android:id="@+id/button8"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -97,7 +99,7 @@
                     android:layout_weight="1"
                     android:text="9"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button9"/>
+                    android:layout_height="50dp" android:id="@+id/button9"/>
             <Button
                     android:onClick="buttonNumberManipulation"
                     android:background="@color/colorYellowish"
@@ -105,7 +107,7 @@
                     android:layout_weight="1"
                     android:text="*"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonMultiply"/>
+                    android:layout_height="50dp" android:id="@+id/buttonMultiply"/>
         </TableRow>
 
         <TableRow android:layout_width="match_parent"
@@ -119,7 +121,7 @@
                     android:layout_weight="1"
                     android:text="4"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button4"/>
+                    android:layout_height="50dp" android:id="@+id/button4"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -128,7 +130,7 @@
                     android:layout_weight="1"
                     android:text="5"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button5"/>
+                    android:layout_height="50dp" android:id="@+id/button5"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -137,7 +139,7 @@
                     android:layout_weight="1"
                     android:text="6"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button6"/>
+                    android:layout_height="50dp" android:id="@+id/button6"/>
             <Button
                     android:onClick="buttonNumberManipulation"
                     android:background="@color/colorYellowish"
@@ -145,7 +147,7 @@
                     android:layout_weight="1"
                     android:text="_"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonSub"/>
+                    android:layout_height="50dp" android:id="@+id/buttonSub"/>
         </TableRow>
 
         <TableRow android:layout_width="match_parent" android:layout_height="match_parent">
@@ -157,7 +159,7 @@
                     android:layout_weight="1"
                     android:text="1"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button1"/>
+                    android:layout_height="50dp" android:id="@+id/button1"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -166,7 +168,7 @@
                     android:layout_weight="1"
                     android:text="2"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button2"/>
+                    android:layout_height="50dp" android:id="@+id/button2"/>
             <Button
                     android:layout_marginRight="5dp"
                     android:onClick="buttonNumberEvent"
@@ -175,7 +177,7 @@
                     android:layout_weight="1"
                     android:text="3"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/button3"/>
+                    android:layout_height="50dp" android:id="@+id/button3"/>
             <Button
                     android:onClick="buttonNumberManipulation"
                     android:background="@color/colorYellowish"
@@ -183,7 +185,7 @@
                     android:layout_weight="1"
                     android:text="+"
                     android:layout_width="wrap_content"
-                    android:layout_height="70dp" android:id="@+id/buttonAdd"/>
+                    android:layout_height="50dp" android:id="@+id/buttonAdd"/>
         </TableRow>
     </TableLayout>
 
@@ -199,7 +201,7 @@
                 android:textColor="@color/colorTextBlack"
                 android:text="0"
                 android:layout_width="0dp"
-                android:layout_height="70dp" android:id="@+id/button0" android:layout_weight="2"/>
+                android:layout_height="50dp" android:id="@+id/button0" android:layout_weight="2"/>
         <Button
                 android:layout_marginRight="5dp"
                 android:onClick="buttonNumberEvent"
@@ -207,13 +209,13 @@
                 android:textColor="@color/colorTextBlack"
                 android:text="."
                 android:layout_width="0dp"
-                android:layout_height="70dp" android:id="@+id/buttonDot" android:layout_weight="1"/>
+                android:layout_height="50dp" android:id="@+id/buttonDot" android:layout_weight="1"/>
         <Button
                 android:onClick="equalToButtonClick"
                 android:background="@color/colorYellowish"
                 android:textColor="@color/colorWhite"
                 android:text="="
                 android:layout_width="0dp"
-                android:layout_height="70dp" android:id="@+id/buttonEqualTo" android:layout_weight="1"/>
+                android:layout_height="50dp" android:id="@+id/buttonEqualTo" android:layout_weight="1"/>
     </LinearLayout>
 </LinearLayout>
