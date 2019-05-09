@@ -3,6 +3,8 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.learn.tictactoe">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -11,6 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.learn.sunset.SunsetActivity">
+        </activity>
         <activity android:name="com.learn.caculator.CalculatorActivity">
         </activity>
         <activity android:name=".TicTacToeActivity">
