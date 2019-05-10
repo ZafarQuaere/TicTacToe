@@ -13,6 +13,8 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.learn.navigation.NavigationActivity">
+        </activity>
         <activity android:name="com.learn.sunset.SunsetActivity">
         </activity>
         <activity android:name="com.learn.caculator.CalculatorActivity">

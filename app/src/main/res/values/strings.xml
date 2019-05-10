@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="nav1_fragment">Nav1 Fragment</string>
 </resources>

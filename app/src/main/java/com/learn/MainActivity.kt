@@ -1,9 +1,10 @@
 package com.learn
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.learn.caculator.CalculatorActivity
+import com.learn.navigation.NavigationActivity
 import com.learn.sunset.SunsetActivity
 import com.learn.tictactoe.R
 import com.learn.tictactoe.TicTacToeActivity
@@ -24,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
         btnGetSunset.setOnClickListener {
             startActivity(Intent(this, SunsetActivity::class.java))
+        }
+        btnNavigationDemo.setOnClickListener {
+            startActivity(Intent(this, NavigationActivity::class.java));
         }
     }
 }

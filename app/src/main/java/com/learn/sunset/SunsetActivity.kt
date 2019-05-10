@@ -1,9 +1,9 @@
 package com.learn.sunset
 
 import android.os.AsyncTask
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.learn.tictactoe.R
 import kotlinx.android.synthetic.main.activity_sunset.*
 import org.json.JSONObject

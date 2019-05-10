@@ -1,10 +1,10 @@
 package com.learn.caculator
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import com.learn.tictactoe.R
 import kotlinx.android.synthetic.main.activity_calculator.*
 
